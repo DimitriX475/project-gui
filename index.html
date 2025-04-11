@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Билеты на аттракционы</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Добро пожаловать в Парк Аттракционов!</h1>
+        <nav>
+            <ul>
+                <li><a href="#info">Информация</a></li>
+                <li><a href="#rides">Аттракционы</a></li>
+                <li><a href="#tickets">Цены на билеты</a></li>
+                <li><a href="#reviews">Отзывы</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="info">
+            <h2>Информация о парке</h2>
+            <p>Наш парк аттракционов предлагает множество захватывающих аттракционов для всей семьи. Присоединяйтесь к нам для незабываемых впечатлений!</p>
+            <p>Мы работаем каждый день с 10:00 до 22:00. У нас есть специальные предложения для групп и семей.</p>
+        </section>
+        <section id="rides">
+            <h2>Наши аттракционы</h2>
+            <article>
+                <h3>Американские горки</h3>
+                <p>Погрузитесь в мир адреналина на наших американских горках, которые предлагают невероятные повороты и спуски!</p>
+            </article>
+            <article>
+                <h3>Колесо обозрения</h3>
+                <p>Наслаждайтесь великолепным видом на парк с высоты, катаясь на нашем колесе обозрения.</p>
+            </article>
+            <article>
+                <h3>Водные горки</h3>
+                <p>Охладитесь в жаркий день на наших водных горках, которые подойдут как для детей, так и для взрослых.</p>
+            </article>
+            <article>
+                <h3>Детская площадка</h3>
+                <p>Безопасная и веселая площадка для самых маленьких, где они могут играть и развлекаться.</p>
+            </article>
+        </section>
+        <section id="tickets">
+            <h2>Цены на билеты</h2>
+            <p>Взрослый билет: <strong>1000 руб.</strong></p>
+            <p>Детский билет: <strong>500 руб.</strong></p>
+            <button id="buyButton">Купить билет</button>
+        </section>
+        <section id="reviews">
+            <h2>Отзывы посетителей</h2>
+            <blockquote>
+                <p>«Лучший парк, в котором я когда-либо был! Аттракционы просто потрясающие!» - Алексей</p>
+            </blockquote>
+            <blockquote>
+                <p>«Отличное место для семейного отдыха. Дети в восторге!» - Мария</p>
+            </blockquote>
+            <blockquote>
+                <p>«Американские горки - это просто нечто! Обязательно вернусь!» - Дмитрий</p>
+            </blockquote>
+        </section>
+        <section id="contact">
+            <h2>Связаться с нами</h2>
+            <form id="contactForm">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Сообщение:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Отправить</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Парк Аттракционов</p>
+    </footer>
+
+    <script>
+        document.getElementById('buyButton').addEventListener('click', function()) {
+            alert('Вы выбрали покупку билета')
+        }
